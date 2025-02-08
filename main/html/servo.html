@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Controle de Servo</title>
+    <script>
+        function sendCommand(direction) {
+            let turns = document.getElementById("turns").value;
+            fetch("/control", {
+                method: "POST",
+                headers: {"Content-Type": "text/plain"},
+                body: direction + " " + turns
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Controle de Servomotor</h1>
+    <label for="turns">Número de voltas:</label>
+    <input type="number" id="turns" min="1" value="1">
+    <br>
+    <button onclick="sendCommand('horario')">Sentido Horário</button>
+    <button onclick="sendCommand('antihorario')">Sentido Anti-Horário</button>
+</body>
+</html>

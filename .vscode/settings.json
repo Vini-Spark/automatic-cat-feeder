@@ -1,0 +1,15 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPathWin": "C:\\Users\\ViniciusA\\esp\\v5.2.2\\esp-idf",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32s2.cfg"
+    ],
+    "idf.toolsPathWin": "C:\\Users\\ViniciusA\\.espressif",
+    "idf.flashType": "UART",
+    "idf.portWin": "COM3",
+    "files.associations": {
+        "cstring": "cpp",
+        "typeinfo": "cpp"
+    }
+}
